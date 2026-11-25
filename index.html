@@ -192,13 +192,13 @@ font-family:'Cairo',system-ui,sans-serif;background:var(--bg);color:#fff;positio
 @media (prefers-reduced-motion:reduce){#elg .hglow,#elg .tag-bg,#elg .fin-bg{animation:none}}
 /* flowing smoke layers */
 #elg .smoke{position:absolute;inset:0;overflow:hidden;mix-blend-mode:screen;-webkit-mask-image:radial-gradient(ellipse 62% 78% at 28% 52%,#000 25%,transparent 100%);mask-image:radial-gradient(ellipse 62% 78% at 28% 52%,#000 25%,transparent 100%)}
-#elg .sm{position:absolute;top:-10%;left:-20%;width:140%;height:120%;object-fit:cover;opacity:.42;will-change:transform}
-#elg .sm1{animation:sf1 38s linear infinite alternate}
-#elg .sm2{opacity:.36;animation:sf2 52s linear infinite alternate}
-#elg .sm3{opacity:.26;transform:scaleX(-1);animation:sf3 29s linear infinite alternate}
-@keyframes sf1{from{transform:translate3d(-6%,4%,0) scale(1.05) rotate(0deg)}to{transform:translate3d(8%,-6%,0) scale(1.2) rotate(2deg)}}
-@keyframes sf2{from{transform:translate3d(8%,-5%,0) scale(1.25) rotate(-2deg)}to{transform:translate3d(-8%,6%,0) scale(1.05) rotate(1deg)}}
-@keyframes sf3{from{transform:scaleX(-1) translate3d(-10%,8%,0) scale(1.1)}to{transform:scaleX(-1) translate3d(10%,-10%,0) scale(1.3)}}
+#elg .sm{position:absolute;top:-10%;left:-20%;width:140%;height:120%;object-fit:cover;opacity:.62;will-change:transform}
+#elg .sm1{animation:sf1 15s ease-in-out infinite alternate}
+#elg .sm2{opacity:.55;animation:sf2 20s ease-in-out infinite alternate}
+#elg .sm3{opacity:.42;transform:scaleX(-1);animation:sf3 12s ease-in-out infinite alternate}
+@keyframes sf1{from{transform:translate3d(-16%,10%,0) scale(1.05) rotate(-4deg)}to{transform:translate3d(18%,-14%,0) scale(1.3) rotate(5deg)}}
+@keyframes sf2{from{transform:translate3d(16%,-12%,0) scale(1.3) rotate(-5deg)}to{transform:translate3d(-18%,12%,0) scale(1.05) rotate(4deg)}}
+@keyframes sf3{from{transform:scaleX(-1) translate3d(-22%,16%,0) scale(1.1)}to{transform:scaleX(-1) translate3d(22%,-20%,0) scale(1.4)}}
 @media (max-width:767px){#elg .smoke{-webkit-mask-image:radial-gradient(ellipse 90% 55% at 30% 30%,#000 25%,transparent 100%);mask-image:radial-gradient(ellipse 90% 55% at 30% 30%,#000 25%,transparent 100%)}}
 @media (prefers-reduced-motion:reduce){#elg .sm{animation:none}}
 /* mouse parallax (desktop, set by JS) */
